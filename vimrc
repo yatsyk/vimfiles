@@ -362,3 +362,9 @@ function! s:HighlightLongLines(width)
         echomsg "Usage: HighlightLongLines [natural number]"
     endif
 endfunction
+
+
+set termencoding=utf-8
+set fileencodings=utf8,cp1251
+set encoding=utf8
+
