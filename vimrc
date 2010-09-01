@@ -268,8 +268,8 @@ if has("gui_running")
         set invmmta
     endif
     if has("gui_win32") || has("gui_win32s")
-        set guifont=Consolas:h12
-        set enc=utf-8
+        "set guifont=Consolas:h11
+        "set enc=utf-8
     endif
 else
     "dont load csapprox if there is no gui support - silences an annoying warning
@@ -312,7 +312,10 @@ map <A-k> :cprevious<CR>
 try
   source ~/.vim/snippets/support_functions.vim
 catch
-  source ~/vimfiles/snippets/support_functions.vim
+  try
+    source ~/vimfiles/snippets/support_functions.vim
+  catch
+  endtry
 endtry
 autocmd vimenter * call s:SetupSnippets()
 function! s:SetupSnippets()
@@ -368,3 +371,8 @@ set termencoding=utf-8
 set fileencodings=utf8,cp1251
 set encoding=utf8
 
+set guifont=consolas:h11
+"colorscheme darkblack
+
+
+lang mes en
