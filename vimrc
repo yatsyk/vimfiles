@@ -373,7 +373,11 @@ set encoding=utf8
 
 set guifont=consolas:h11
 "colorscheme darkblack
-colorscheme wombat256
+"colorscheme wombat256
+"colorscheme ps_color
+"colorscheme fnaqevan 
+colorscheme moria
+
 
 
 lang mes en
