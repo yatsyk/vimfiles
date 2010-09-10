@@ -367,6 +367,24 @@ function! s:HighlightLongLines(width)
 endfunction
 
 
+
+
+" from http://saaridev.wordpress.com/
+
+let g:fuzzy_matching_limit = 70
+map fb :FufBuffer<CR>
+map fd :FufDir<CR>
+map ff :FufFile<CR>
+map fm :FufMruFile<CR>
+
+
+
+
+
+
+
+
+
 set termencoding=utf-8
 set fileencodings=utf8,cp1251
 set encoding=utf8
