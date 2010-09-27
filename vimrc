@@ -1,4 +1,3 @@
-"Fabio Kung <fabio.kung@gmail.com>
 "
 "Use Vim settings, rather then Vi settings (much better!).
 "This must be first, because it changes other options as a side effect.
@@ -378,12 +377,12 @@ map ff :FufFile<CR>
 map fm :FufMruFile<CR>
 
 
+let syntastic_disabled_filetypes = []
 
-
-
-
-
-
+" TODO also check -ruby
+if has("gui_win32") || has("gui_win32s") 
+  call extend(syntastic_disabled_filetypes, ['ruby', 'sass'])
+endif
 
 set termencoding=utf-8
 set fileencodings=utf8,cp1251
@@ -393,6 +392,7 @@ set guifont=consolas:h11
 "colorscheme darkblack
 "colorscheme wombat256
 "colorscheme ps_color
+"colorscheme mustang
 "colorscheme fnaqevan 
 colorscheme moria
 
